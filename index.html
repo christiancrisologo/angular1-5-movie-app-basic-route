@@ -1,0 +1,37 @@
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular1.5 Movie List</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">    </link>
+    <link rel="stylesheet" href="style.css">    </link>    
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>    
+</head>
+<body ng-cloak>
+
+ 
+        <nav-component 
+            title="'My Movies'" 
+            menus="[
+            {href:'#home',name:'Home'},
+            {href:'#list',name:'Movie List'},
+            {href:'#manage',name:'Manage Movies'},
+            {href:'#about',name:'About'}]" >
+        </nav-component>
+       <div class="container">
+        <div class="row view-container">
+            <ng-view></ng-view>
+        </div>
+    </div>
+
+    <script src="app/app.js"></script>
+    <script src="app/movie-list.component.js"></script>
+    <script src="app/nav.component.js"></script>
+    <script src="app/rating.component.js"></script>
+    <script src="app/star.component.js"></script>
+    <script src="app/home.page.js"></script>
+    <script src="app/manage.movie.page.js"></script>
+    <script src="app/about.page.js"></script>
+    
+</body>
+</html>

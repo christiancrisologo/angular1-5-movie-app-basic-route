@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "title":"Star Wars",
+        "rating":5,
+        "length":120
+    },
+       {
+        "id":2,
+        "title":"Avengers",
+        "rating":5,
+        "length":200
+    },
+    {
+        "id":3,
+        "title":"Notebook",
+        "rating":3,
+        "length":110
+    },
+    {
+        "id":4,
+        "title":"Men In Black",
+        "rating":2,
+        "length":100
+    },
+    {
+        "id":5,
+        "title":"Lord of the Rings",
+        "rating":5,
+        "length":120
+    }
+]

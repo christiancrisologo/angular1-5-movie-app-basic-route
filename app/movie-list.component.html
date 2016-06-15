@@ -1,0 +1,26 @@
+<h1>Movie List</h1>
+
+<div class="row">
+    
+    <table class="table">
+        <tr>
+            <th>Title</th>
+            <th>lenght</th>
+            <th>Rating</th>
+            <th></th>
+        </tr>
+        <tr ng-repeat="movie in vm.movies">
+            <td>{{movie.title}}</td>
+            <td>{{movie.length}}</td>
+            <td>
+                <star-component rating="movie.rating">
+                     <span class="glyphicon glyphicon-star" ></span>
+                </star-component>
+            </td>
+            <td>
+              <rating-component data="movie" rating="movie.rating" ></rating-component>
+            </td>
+        </tr>
+    </table>
+</div>
+    
